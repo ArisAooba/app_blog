@@ -1,0 +1,41 @@
+
+
+.btn-logout{
+    width: 5rem;
+    height: 2rem;
+    border-radius: .5rem;
+
+    background-color: rgb(221, 175, 175);
+}
+
+.class-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #2e0352;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100vw;
+}
+
+
+.div-controler{
+    /* width: 30vw; */
+    width: 100vw;
+
+}
+
+.txt-center{
+    width: 100vw;
+
+
+}
+
+.info-login{
+    width: 100vw;
+
+
+}
+

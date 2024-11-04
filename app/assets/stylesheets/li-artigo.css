@@ -1,0 +1,33 @@
+.div-li {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+.li-artigo {
+    border-radius: 0.5rem;
+    width: 300px; 
+    height: 400px;
+    background-color: #ccc; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    color: white; 
+    font-size: 24px;
+}
+
+.li-artigo a {
+    text-decoration: none; 
+    color: black;
+    font-size: 2rem;
+
+}
+
+.li-artigo:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease; 
+    background-color: #adabab;
+}

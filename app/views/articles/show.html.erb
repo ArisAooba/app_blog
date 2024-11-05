@@ -1,17 +1,27 @@
-<h1><%= @article.title %></h1>
 
-<p><%= @article.body %></p>
+<div class="main-geral-show">
+  <h1 class="title-show"><%= @article.title %></h1>
 
-<ul>
-  <li><%= link_to "Editar", edit_article_path(@article) %></li>
-  <li><%= link_to "Deletar", article_path(@article), data: {
-                    turbo_method: :delete,
-                    turbo_confirm: "Vocẽ tem certeza de que deseja DELETAR esse artigo?"
-                  } %></li>
-</ul>
+  <div class="main-geral-show-interna">
 
-<h2>Comments</h2>
-<%= render @article.comments %>
-
-<h2>Add a comment:</h2>
-<%= render "comments/form", article: @article %>
+    
+    
+    
+    <p><%= @article.body %></p>
+    
+    <ul>
+      <li><%= link_to "Editar", edit_article_path(@article) %></li>
+      <li><%= link_to "Deletar", article_path(@article), data: {
+        turbo_method: :delete,
+        turbo_confirm: "Vocẽ tem certeza de que deseja DELETAR esse artigo?"
+      } %></li>
+    </ul>
+    
+    <h2>Comments</h2>
+    <%= render @article.comments %>
+    
+    <h2>Add a comment:</h2>
+    <%= render "comments/form", article: @article %>
+    
+  </div>
+</div>

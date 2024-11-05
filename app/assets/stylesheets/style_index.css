@@ -1,7 +1,7 @@
 * {
     padding: 0;
-    /* margin: 0; */
-    /* overflow: hidden; */
+    margin: 0;
+    overflow: hidden;
 }
 
 body {
@@ -10,3 +10,195 @@ body {
     color: #333;
 }
 
+/* ####################################################################### */
+/* ####################################################################### */
+
+/* #################     BTN LOGIN AND LOGOUT      ####################### */
+
+/* ####################################################################### */
+/* ####################################################################### */
+
+.btn-logout{
+    width: 6rem;
+    height: 2rem;
+    border-radius: .5rem;
+    background-color: rgb(221, 175, 175);
+    background-color: rgb(153, 16, 16);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.info-login{
+    width: 100vw;
+}
+
+.btn-login{
+    border-radius: .5rem;
+    background-color: rgb(41, 21, 158);
+    text-decoration: none;
+    color: #fff;
+    padding: .6rem 2rem .6rem 2rem;
+    font-weight: 800;
+
+}
+
+.btn-login:hover{
+    background-color: #fff;
+    color: rgb(47, 22, 189);
+}
+
+.btn-logout:hover{
+    background-color: #fff;
+    color: rgb(122, 14, 14);
+}
+
+
+
+/* ####################################################################### */
+/* ####################################################################### */
+
+/* #######################     HEADER INDEX      ######################### */
+
+/* ####################################################################### */
+/* ####################################################################### */
+
+
+
+.class-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #2e0352;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100vw;
+}
+
+
+.div-controler{
+    /* width: 30vw; */
+    width: 100vw;
+
+}
+
+.txt-center{
+    width: 100vw;
+}
+
+.txt-center h1:hover{
+    color: green;
+
+}
+
+
+
+/* ####################################################################### */
+/* ####################################################################### */
+
+/* #########################     LI ARTIGO      ########################## */
+
+/* ####################################################################### */
+/* ####################################################################### */
+
+
+.main-geral{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    place-items: center;
+}
+
+.item{
+background-color: gray;
+}
+
+.grid-list {
+    width: 95vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* background-color: red; */
+
+    gap: 1rem;
+    list-style: none; 
+    padding: 0;
+    padding: 1rem;
+}
+
+.grid-list li {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+
+.li-artigo {
+    
+    border-radius: 0.5rem;
+    height: 400px;
+    background-color: #ccc; 
+
+    flex-direction: column;
+    color: white; 
+    font-size: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.div-li {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    cursor: pointer;
+
+}
+
+
+.li-artigo p{
+    padding-top: 10%;
+    font-weight: 100;
+    color: #777777;
+
+}
+ 
+.li-artigo:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease; 
+    background-color: #adabab;
+}
+
+.li-artigo a:hover {
+    transition: transform 0.4s ease; 
+    color: #7921c0;
+
+}
+
+.li-artigo a{
+    text-decoration: none; 
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 900;
+}
+
+.btn-conferir{
+    background-color: #000;
+    color: white;
+    width: 100%;
+    border: none;
+}
+
+.btn-conferir a{
+    color: white;
+}

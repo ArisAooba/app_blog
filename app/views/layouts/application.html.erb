@@ -32,7 +32,7 @@
       <div class="div-controler"></div> <!-- Somente para controlar -->
 
       <div class="txt-center">
-        <h1>Meu puta blog</h1>
+        <h1>Blog do Rômulo</h1>
 
       </div>
 
@@ -43,7 +43,7 @@
         <%= button_to 'Logout', destroy_admin_session_path, method: :delete, class:'btn btn-logout' %>
         
         <% else %>
-        <%= link_to 'Login', new_admin_session_path %>
+        <%= link_to 'Login', new_admin_session_path, class:'btn btn-login' %>
         <% end %>
 
       </div>

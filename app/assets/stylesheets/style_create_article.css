@@ -1,0 +1,67 @@
+/* Estilo geral do formulário específico para criar artigos */
+.form-create-article {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 6rem;
+  border: 1px solid #333;
+}
+
+/* Estilo dos campos do formulário */
+.form-create-article .form-field {
+  margin-bottom: 20px;
+}
+
+.form-create-article .form-label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-create-article .form-input,
+.form-create-article .form-select,
+.form-create-article .form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-create-article .form-textarea {
+  height: 150px;
+}
+
+/* Estilo das mensagens de erro */
+.form-create-article .form-error {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Estilo do botão de envio */
+.form-create-article .btn-submit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.form-create-article .btn-submit:hover {
+  background-color: #45a049;
+}
+
+/* Estilo das ações de envio */
+.form-create-article .form-actions {
+  text-align: center;
+}

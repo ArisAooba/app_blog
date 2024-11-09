@@ -1,0 +1,341 @@
+
+/* ####################################################################### */
+/* ####################################################################### */
+
+/* #########################     SIGN IN      ########################## */
+
+/* ####################################################################### */
+/* ####################################################################### */
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.login-form {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    width: 100%;
+    max-width: 400px; 
+    text-align: center;
+    border: 1px solid #ccc;
+
+}
+
+.login-form h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.login-form .field {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-form label {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form input[type="checkbox"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #53cbef; 
+    outline: none;
+    background-color: #fff;
+}
+
+
+.login-form input[type="submit"] {
+    background-color: #007bff;
+
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+.login-form input[type="submit"]:hover {
+    background-color: #44b5d1;
+}
+
+.login-form .links {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-form .links a {
+    color: #53cbef;
+    font-weight: 800;
+    text-decoration: none;
+
+}
+
+.login-form .links a:hover {
+    text-decoration: underline;
+}
+
+
+.login-form .field input[type="checkbox"] {
+    width: auto;
+    display: inline-block;
+}
+
+.login-form .field input[type="checkbox"] + label {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+/* ####################################################################### */
+/* ####################################################################### */
+
+/* #########################     SIGN UP      ########################## */
+
+/* ####################################################################### */
+/* ####################################################################### */
+
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+}
+
+
+.signup-form {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 400px; 
+    text-align: center;
+    border: 1px solid #ccc;
+
+}
+
+.signup-form h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.signup-form .field {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+.signup-form label {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form input[type="password_confirmation"],
+.signup-form input[type="checkbox"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+.signup-form input[type="email"]:focus,
+.signup-form input[type="password"]:focus,
+.signup-form input[type="password_confirmation"]:focus {
+    border-color: #53cbef; 
+    outline: none;
+    background-color: #fff;
+}
+
+.signup-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-form input[type="submit"]:hover {
+    background-color: #44b5d1;
+}
+
+.signup-form .links {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-form .links a {
+    color: #53cbef;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.signup-form .links a:hover {
+    text-decoration: underline;
+}
+
+.signup-form .field input[type="checkbox"] {
+    width: auto;
+    display: inline-block;
+}
+
+.signup-form .field input[type="checkbox"] + label {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.signup-form .error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+
+/* ####################################################################### */
+/* ####################################################################### */
+
+/* ######################     FORGOT PASSWORD      ####################### */
+
+/* ####################################################################### */
+/* ####################################################################### */
+
+
+.forgot-password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: #f4f4f9; 
+
+}
+
+.forgot-password-form {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 400px; 
+    text-align: center;
+    border: 1px solid #ccc;
+
+}
+
+.forgot-password-form h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.forgot-password-form .field {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.forgot-password-form label {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.forgot-password-form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px;
+    border: 1px solid #7c7c7c;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+.forgot-password-form input[type="email"]:focus {
+    border-color: #53cbef; 
+    outline: none;
+    background-color: #fff;
+}
+
+.forgot-password-form input[type="submit"] {
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.forgot-password-form input[type="submit"]:hover {
+    background-color: #44b5d1;
+}
+
+.forgot-password-form .links {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.forgot-password-form .links a {
+    color: #53cbef;
+    text-decoration: none;
+}
+
+.forgot-password-form .links a:hover {
+    text-decoration: underline;
+}
+
+.forgot-password-form .error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+
+#admin_email,
+#admin_password,
+#admin_password_confirmation{
+    border: 1px solid #7c7b7b;
+}

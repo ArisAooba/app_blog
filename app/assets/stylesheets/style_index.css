@@ -1,57 +1,65 @@
+:root{
+    --background_header_footer: #072357;
+}
+
+
 * {
-    padding: 0;
     margin: 0;
-    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f5f5f5;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* ####################################################################### */
-/* ####################################################################### */
 
-/* #################     BTN LOGIN AND LOGOUT      ####################### */
 
 /* ####################################################################### */
 /* ####################################################################### */
 
-.btn-logout{
-    width: 6rem;
-    height: 2rem;
-    border-radius: .5rem;
-    background-color: rgb(221, 175, 175);
-    background-color: rgb(153, 16, 16);
-    color: white;
-    border: none;
-    font-size: 1rem;
-    font-weight: 800;
+/* ######################     LOGIN E LOGOUT      ######################## */
+
+/* ####################################################################### */
+/* ####################################################################### */
+
+
+
+.info-login {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.info-login{
-    width: 100vw;
-}
-
-.btn-login{
-    border-radius: .5rem;
-    background-color: rgb(41, 21, 158);
-    text-decoration: none;
+.info-login p {
+    margin: 0;
     color: #fff;
-    padding: .6rem 2rem .6rem 2rem;
-    font-weight: 800;
-
+    font-size: 0.9rem;
 }
 
-.btn-login:hover{
-    background-color: #fff;
-    color: rgb(47, 22, 189);
+/* Estilo dos botões de login e logout */
+.btn-login, .btn-logout {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-.btn-logout:hover{
-    background-color: #fff;
-    color: rgb(122, 14, 14);
+.btn-login:hover, .btn-logout:hover {
+    background-color: #0056b3;
 }
 
 
@@ -66,34 +74,39 @@ body {
 
 
 
-.class-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* Estilo para o Header */
+header {
+    background-color: var(--background_header_footer);
 
-    background: #2e0352;
+
     color: #fff;
-    padding: 10px 0;
+    padding: 20px;
     text-align: center;
+    position: fixed;
     width: 100vw;
 }
 
-
-.div-controler{
-    /* width: 30vw; */
-    width: 100vw;
-
+header h1 a{
+    margin: 0;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
 }
 
-.txt-center{
-    width: 100vw;
+header h1 a:hover{
+    color: #5da2ec;
 }
 
-.txt-center h1:hover{
-    color: green;
-
+.subtitulo {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #ccc;
 }
 
+header p {
+    font-size: 1rem;
+    color: #ccc;
+}
 
 
 /* ####################################################################### */
@@ -105,100 +118,171 @@ body {
 /* ####################################################################### */
 
 
-.main-geral{
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    place-items: center;
-}
-
-.item{
-background-color: gray;
-}
-
-.grid-list {
-    width: 95vw;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    /* background-color: red; */
-
-    gap: 1rem;
-    list-style: none; 
-    padding: 0;
-    padding: 1rem;
-}
-
-.grid-list li {
-    background-color: #ccc;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-}
-
 
 .li-artigo {
-    
-    border-radius: 0.5rem;
-    height: 400px;
-    background-color: #ccc; 
-
-    flex-direction: column;
-    color: white; 
-    font-size: 24px;
-
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-.div-li {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-    cursor: pointer;
-
-}
-
-
-.li-artigo p{
-    padding-top: 10%;
-    font-weight: 100;
-    color: #777777;
-
-}
- 
 .li-artigo:hover {
-    transform: scale(1.05);
-    transition: transform 0.4s ease; 
-    background-color: #adabab;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-.li-artigo a:hover {
-    transition: transform 0.4s ease; 
-    color: #7921c0;
-
+.li-artigo a {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px;
 }
 
-.li-artigo a{
-    text-decoration: none; 
-    color: black;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-weight: 900;
+.li-artigo p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
 }
 
-.btn-conferir{
-    background-color: #000;
-    color: white;
-    width: 100%;
+.li-artigo img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* BTN CONFERIR */
+
+.btn-conferir {
+    background-color: #007bff;
+    color: #fff;
     border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.btn-conferir a{
-    color: white;
+.btn-conferir a {
+    color: #fff;
+    text-decoration: none;
 }
+
+.btn-conferir:hover {
+    background-color: #0056b3;
+}
+
+.btn-conferir:active {
+    background-color: #08315e;
+    transform: scale(.9);
+}
+
+
+/* Grid principal para artigos */
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.main-geral-index{
+    margin-top: 7rem;
+
+    padding-bottom: 50px; /* Adiciona um espaço extra abaixo da lista de artigos */
+}
+
+.li-artigo-btn-new-artigo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+
+}
+
+.btn-create-article {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+
+
+  
+  .btn-create-article:hover {
+    background-color: #45a049; /* verde mais escuro */
+  }
+  
+  
+  .header-buttons {
+    display: flex;
+    justify-content: flex-end; /* alinhar botão à direita */
+    padding: 10px 0;
+  }
+  
+
+/* ####################################################################### */
+/* ####################################################################### */
+
+/* ###########################     FOOTER      ########################### */
+
+/* ####################################################################### */
+/* ####################################################################### */
+
+
+
+footer {
+    background-color: var(--background_header_footer);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+footer p {
+    font-size: 0.9rem;
+}
+
+/* ####################################################################### */
+/* ####################################################################### */
+
+/* #######################     RESPONSIVIDADE      ####################### */
+
+/* ####################################################################### */
+/* ####################################################################### */
+
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .li-artigo {
+        padding: 15px;
+    }
+
+    .btn-conferir {
+        padding: 8px 16px;
+    }
+}
+
+
+

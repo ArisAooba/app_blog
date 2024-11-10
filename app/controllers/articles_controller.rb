@@ -8,7 +8,6 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    # Não é necessário encontrar o artigo novamente aqui, pois set_post já faz isso
   end
 
   def new
